@@ -1,1 +1,12 @@
+pluginManagement {
+  repositories {
+    maven {
+      url "${artifactory_virtual_url}"
+      credentials {
+        username = "${artifactory_user}"
+        password = "${artifactory_password}"
+      }
+    }
+  }
+}
 rootProject.name = 'client-api-service'
